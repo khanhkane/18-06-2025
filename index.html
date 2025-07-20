@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendor Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="top-bar">
+      <div>
+        <h2>Vendor movements <span class="count">240 vendors</span></h2>
+        <p>Keep track of vendor and their security ratings.</p>
+      </div>
+      <div class="top-actions">
+        <button class="import"><i class="fa fa-upload"></i> Import</button>
+        <button class="add-vendor">+ Add vendor</button>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="tabs">
+        <button class="active">View all</button>
+        <button>Monitored</button>
+        <button>Text</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa fa-filter"></i> Filters</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"/></th>
+          <th>Vendor</th>
+          <th>Rating</th>
+          <th>Last assessed</th>
+          <th>License use</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td>
+            <div class="vendor-info">
+              <img src="https://via.placeholder.com/30" alt="logo"/>
+              <div>
+                <strong>Catalog</strong><br/>
+                <span>catalogapp.io</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="rating">
+              <span>60</span>
+              <div class="bar"><div class="fill green" style="width: 60%;"></div></div>
+              <span class="up">+5%</span>
+            </div>
+          </td>
+          <td>22 Jan 2022</td>
+          <td>
+            <span class="badge active">Active</span>
+            <span class="badge blue">Customer data</span>
+            <span class="badge gray">Admin</span>
+          </td>
+          <td class="actions">
+            <i class="fa fa-edit"></i>
+            <i class="fa fa-trash"></i>
+          </td>
+        </tr>
+        <!-- Copy more <tr> blocks here for more rows -->
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <span>Page 1 of 10</span>
+      <div>
+        <button>Previous</button>
+        <button>Next</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
