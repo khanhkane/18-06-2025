@@ -3,86 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vendor Dashboard</title>
+  <title>Contact Form</title>
   <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
   <div class="container">
-    <header class="top-bar">
-      <div>
-        <h2>Vendor movements <span class="count">240 vendors</span></h2>
-        <p>Keep track of vendor and their security ratings.</p>
-      </div>
-      <div class="top-actions">
-        <button class="import"><i class="fa fa-upload"></i> Import</button>
-        <button class="add-vendor">+ Add vendor</button>
-      </div>
-    </header>
-
-    <div class="controls">
-      <div class="tabs">
-        <button class="active">View all</button>
-        <button>Monitored</button>
-        <button>Text</button>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa fa-filter"></i> Filters</button>
-      </div>
+    <div class="left-panel">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Background"/>
     </div>
+    <div class="right-panel">
+      <h1>Let’s level up your brand, together</h1>
+      <p>You can reach us anytime via <a href="#">hi@untitledui.com</a></p>
+      
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your name"/>
 
-    <table>
-      <thead>
-        <tr>
-          <th><input type="checkbox"/></th>
-          <th>Vendor</th>
-          <th>Rating</th>
-          <th>Last assessed</th>
-          <th>License use</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox"/></td>
-          <td>
-            <div class="vendor-info">
-              <img src="https://via.placeholder.com/30" alt="logo"/>
-              <div>
-                <strong>Catalog</strong><br/>
-                <span>catalogapp.io</span>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class="rating">
-              <span>60</span>
-              <div class="bar"><div class="fill green" style="width: 60%;"></div></div>
-              <span class="up">+5%</span>
-            </div>
-          </td>
-          <td>22 Jan 2022</td>
-          <td>
-            <span class="badge active">Active</span>
-            <span class="badge blue">Customer data</span>
-            <span class="badge gray">Admin</span>
-          </td>
-          <td class="actions">
-            <i class="fa fa-edit"></i>
-            <i class="fa fa-trash"></i>
-          </td>
-        </tr>
-        <!-- Copy more <tr> blocks here for more rows -->
-      </tbody>
-    </table>
+        <label>Email</label>
+        <input type="email" placeholder="you@company.com"/>
 
-    <div class="pagination">
-      <span>Page 1 of 10</span>
-      <div>
-        <button>Previous</button>
-        <button>Next</button>
-      </div>
+        <label>Phone number</label>
+        <div class="phone-input">
+          <select>
+            <option value="us">US</option>
+            <option value="vn">VN</option>
+          </select>
+          <input type="tel" placeholder="+1 (555) 000-0000"/>
+        </div>
+
+        <label>How can we help?</label>
+        <textarea placeholder="Tell us a little about the project..."></textarea>
+
+        <label>Services</label>
+        <div class="checkboxes">
+          <label><input type="checkbox"/> Website design</label>
+          <label><input type="checkbox"/> UX design</label>
+          <label><input type="checkbox"/> User research</label>
+          <label><input type="checkbox"/> Content creation</label>
+          <label><input type="checkbox"/> Strategy & consulting</label>
+          <label><input type="checkbox"/> Other</label>
+        </div>
+
+        <button type="submit">Get started</button>
+      </form>
     </div>
   </div>
 </body>
